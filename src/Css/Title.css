@@ -1,0 +1,17 @@
+.wholeTitle{
+    position: absolute;
+    top: 45%;
+    left: 34%;
+}
+.titleName{
+    font-family:'Anton', sans-serif;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+}
+.description{
+    font-family: Roboto;
+    font-size: 30px;
+    color: white;
+}

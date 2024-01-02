@@ -1,0 +1,60 @@
+.navbar {
+  background-color: #a76e46;
+  height: 63px;
+  padding-left: 250px;
+  padding-right: 150px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.navbar a {
+  color: #e6d6b4;
+}
+.logo {
+  width: 120px;
+  height: 45px;
+}
+.navHeroContent {
+  width: 210px;
+  color: #e6d6b4;
+}
+.navbarTop {
+  font-size: 14px;
+  background-color: #a76e46;
+  padding-right: 168px;
+  padding-left: 254px;
+  padding-top: 8px;
+  color: #e6d6b4;
+}
+.navbarTopContent {
+  width: 290px;
+}
+.navbarTopContent a {
+  color: #e6d6b4;
+}
+.searchIcon {
+  position: relative;
+  right: 45px;
+}
+.navbarHero {
+  background-color: beige;
+}
+.searchForItem {
+  padding-left: 20px;
+  margin-top: 7px;
+  width: 600px;
+  border-radius: 32px;
+  height: 40px;
+  background-color: white;
+}
+.divider {
+  border: 1px solid black;
+  height: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.cartIcon {
+  margin-right: 20px;
+}
+.searchBar {
+  margin-right: 10px;
+}

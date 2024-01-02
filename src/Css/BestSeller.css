@@ -1,0 +1,51 @@
+.bestSellerCard{
+    width: 207px;
+    height: 220px;
+    border: 1px solid black;
+    margin-left:4px;
+    margin-right: 4px;
+    border-radius: 7px;
+}
+.bestSellerCard img{
+    width: 180px;
+    height: 130px;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+.bestSellerCards{
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productTitle{
+    margin-top: 15px;
+    margin-left: 13px;
+}
+.productPrice{
+    margin-top: 10px;
+    margin-left: 13px;
+}
+.react-multiple-carousel__arrow{
+    height: 70px;
+    border-radius: 7px !important;
+}
+.react-multiple-carousel__arrow:hover{
+    height: 70px;
+    border-radius: 7px !important;
+    background-color:rgb(255,255,255,0.5) !important;
+}
+.react-multiple-carousel__arrow::before{
+    color: rgb(255, 255, 255,0.3)!important;
+    font-weight:900;
+    font-size: 25px!important;
+}
+.react-multiple-carousel__arrow:hover::before{
+    color: black!important;
+    font-weight:900;
+    font-size: 25px!important;
+}
+.bestSellerTitle{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 90px;
+}

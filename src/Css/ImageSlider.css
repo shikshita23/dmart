@@ -1,0 +1,24 @@
+.carousel{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sliderImage{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.carousel button{
+    color: white;
+    position: relative;
+    bottom: 250px;
+    border: none;
+}
+.slideButtonRight{
+    all: unset;
+    left: 95%;
+}
+.slideButtonLeft{
+    all: unset;
+    left: 1%;
+}

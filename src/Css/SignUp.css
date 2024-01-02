@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+#forms{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    background-color: 	#6B4947;
+    font-weight: 600;
+    width: 500px;
+    padding: 20px 30px 15px 10px;
+    height:480px;
+    color: #e6d6b4;
+    border-radius: 10px;
+}
+label{
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 15px;
+}
+input, select{
+    margin-left: 30px;
+}
+.submitButton{
+    width: 120px;
+    height: 46px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right:auto ;
+    font-size: 17px;
+    background-color:#e6d6b4 ;
+    font-weight: bold;
+    cursor: pointer;
+    color: 	#6B4947;
+}
+.formTitle{
+    font-size: 40px;
+    font-weight:600;
+    text-align: center;
+    margin-top: 50px;
+}
+input{
+    float: right;
+    background-color:#f0f0f0;
+    border:none;
+    border-radius: 7px;
+    height: 35px;
+    width: 270px;
+}
+select {
+    width: 270px;
+    height: 39px;
+    border-radius: 7px;
+    float: right;
+}
+.underline{
+    width:100px;
+    height: 5px;
+    background-color: #a76e46;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+.loginLink{
+    color: #e5cfbd;
+    margin:auto;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.Login{
+    color: white;
+}

@@ -1,12 +1,12 @@
 import '../Css/Navbar.css';
+import '../Pages/Login/SellerAccount';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';  
-import logo from '../assets/logo1new.png'
+import logo from '../assets/logo1new.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCartShopping,
     faMagnifyingGlass
   } from "@fortawesome/free-solid-svg-icons";
-import Login from '../Pages/Login/Login';
 function Navbar(){
     const months = [
         "January",
@@ -34,12 +34,11 @@ function Navbar(){
       const d = new Date();
       console.log(d)
     return(
-        <Router>
         <nav>
         <div className='d-flex flex-column navbarHero'>
             <div className='d-flex navbarTop'>
             <div className="navbarTopContent mr-auto d-flex justify-content-between">
-                <a href='#'>Become a Seller</a>
+                <Link to="/SellerAccount">Become a Seller</Link>
                 <a href='#'>Help and support</a>
             </div>
             <div className="date">
@@ -51,6 +50,7 @@ function Navbar(){
               </div>
         
             </div>
+            
             <div className='d-flex flex-column navbar'>
                 <div className='mr-auto'>
                     <img className='logo'
@@ -70,7 +70,7 @@ function Navbar(){
                     <div className='navHeroContent ml-auto d-flex '>
                         <Link to="/Login">Login</Link>
                         <div className='divider'></div>
-                        <a href='#'>Sign Up</a>
+                        <Link to="/SignUp">Sign Up</Link>
                     </div>
                     <div className='cartIcon'>
                         <FontAwesomeIcon icon={faCartShopping} size='xl'/>
@@ -79,10 +79,6 @@ function Navbar(){
             </div>
         </div>
         </nav>
-        <Routes>
-            <Route path="/Login" element={<Login/>}></Route>
-        </Routes>
-        </Router>
     );
 }
 export default Navbar;

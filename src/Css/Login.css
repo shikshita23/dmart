@@ -1,37 +1,40 @@
-.Container{
+.loginContainer{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 60px;
-    height: 400px;
-    background-color: 	#6B4947;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 100px;
+    height: 340px;
+    background-color:#e6d6b4 ;
     width: 450px;
-    padding: 20px 30px 15px 10px;
-    color: #e6d6b4;
+    padding: 10px 30px 15px 10px;
+    color:	#6B4947;
     border-radius: 10px;
 }
-.header{
-    text-align: center;
+.loginHeader{
+    text-align:end;
+    color:#e6d6b4;
+    margin-right: 300px;
     font-weight:600;
     font-size:40px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .text{
     letter-spacing: 3px;
 }
-.underline{
+.LoginUnderline{
     width:100px;
     height: 5px;
     background-color: #a76e46;
     border-radius: 10px;
-    margin: auto;
+    margin-right: 15px;
     margin-top: 10px;
+    margin-left: auto;
 }
 .inputs{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 .input input {
@@ -45,23 +48,24 @@
     padding-left: 15px;
 }
 .signUpDiv{
-    color: #e6d6b4;;
+    color: #a76e46;
     margin:auto;
     margin-top: 0px;
     margin-bottom: 40px;
     font-size: 14px;
     font-weight: 600;
 }
-.submit{
+.loginSubmit{
     width: 120px;
-    height: 46px;
+    height: 50px;
     border-radius: 7px;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin: auto;
     font-size: 16px;
     background-color: #a76e46;
     font-weight: bold;
     cursor: pointer;
-    color:#e6d6b4
+    color:#e6d6b4;
 }
 .gray{
     background-color: #EAEAEA;
@@ -69,5 +73,10 @@
 }
 .signUpLink{
 
-    color: white;
+    color:black;
+}
+.Login{
+    height: 520px;
+    margin-top: 140px;
+    background-color: 	#6B4947;
 }

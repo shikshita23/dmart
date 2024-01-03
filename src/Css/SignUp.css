@@ -1,23 +1,28 @@
-.container{
+.signUpContainer{
     display: flex;
     flex-direction: column;
+    margin-top: 140px;
+    padding-bottom: 30px;
+    background-color: #6B4947;
+    height: 520px;
 }
 #forms{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 30px;
-    background-color: 	#6B4947;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: #e6d6b4;
     font-weight: 600;
     width: 500px;
     padding: 20px 30px 15px 10px;
-    height:480px;
-    color: #e6d6b4;
+    height:400px;
+    color:  	#6B4947;
     border-radius: 10px;
+    margin-right: 80px;
 }
 label{
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 15px;
 }
 input, select{
@@ -25,28 +30,31 @@ input, select{
 }
 .submitButton{
     width: 120px;
-    height: 46px;
+    height: 38px;
     border-radius: 7px;
     margin-left: auto;
     margin-right:auto ;
-    font-size: 17px;
-    background-color:#e6d6b4 ;
+    font-size: 15px;
+    background-color:#6B4947 ;
     font-weight: bold;
     cursor: pointer;
-    color: 	#6B4947;
+    color: #e6d6b4	;
 }
 .formTitle{
-    font-size: 40px;
+    text-align:end;
+    color:#e6d6b4;
+    margin-right: 300px;
     font-weight:600;
-    text-align: center;
-    margin-top: 50px;
+    font-size:40px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 input{
     float: right;
     background-color:#f0f0f0;
     border:none;
     border-radius: 7px;
-    height: 35px;
+    height: 32px;
     width: 270px;
 }
 select {
@@ -55,23 +63,23 @@ select {
     border-radius: 7px;
     float: right;
 }
-.underline{
+.signUpUnderline{
     width:100px;
     height: 5px;
     background-color: #a76e46;
     border-radius: 10px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: 320px;
 }
 .loginLink{
-    color: #e5cfbd;
+    color: #a76e46;
     margin:auto;
-    margin-top: 30px;
+    margin-top: 7px;
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
-.Login{
-    color: white;
+.login{
+    color: black;
 }

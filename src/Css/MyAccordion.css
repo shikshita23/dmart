@@ -1,16 +1,16 @@
-.mainHeading{
-    width: 800px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color:#46A76E;
-    border-radius: 7px;
-    color: whitesmoke;
+.mainHeading {
+  width: 800px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #46a76e;
+  border-radius: 7px;
+  color: whitesmoke;
 }
-.FQ{
-    font-size: 17px;
-    font-weight: 500;
+.FQ {
+  font-size: 17px;
+  font-weight: 500;
 }
-.FA{
-    margin-top: 10px;
+.FA {
+  margin-top: 10px;
 }

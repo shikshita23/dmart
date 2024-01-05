@@ -1,0 +1,108 @@
+.sideColumn{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+select{
+    border-radius: 0px;
+    width: 240px;
+    font-size: 13px;
+    height: 40px;
+    border: none;
+    background-color: #e6d6b4;
+}
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
+    border-radius: 0px;
+}
+.helpCategory{
+    font-size: 18px;
+    background-color: rgba(167, 110, 70) ;
+    width:240px ;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: right;
+    padding-right: 40px;
+}
+.sideBar{
+    background-color:#e6d6b4;
+    width: 240px;
+    height: 307px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.searchQn{
+    padding-left: 20px;
+    margin-top: 50px;
+    width: 600px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 455px;
+}
+.searchQnIcon{
+    position: absolute;
+    top: 50px;
+    left: 573px;
+    background-color: rgba(167, 110, 70);
+    padding: 12px;
+    padding-left: 40px;
+    padding-right:40px;
+    border-radius: 0px 7px 7px 0px;
+}
+.categoryColumn
+{
+    background-color:#46A76E;
+    border-radius: 7px;
+    height: 135px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.categoryList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.categoryRow{
+    gap: 40px;
+}
+.helpBox{
+    padding-right: 90px;
+    padding-left:90px;
+    margin-top: 125px;
+    margin-right: 70px;
+    margin-left: 50px;
+    background-color: rgba(70, 167, 110, 0.2);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.helpTitle{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.helpDivider{
+    background-color: black;
+    height: 20px;
+    width: 1px;
+    margin-left: 7px;
+    margin-right:7px ;
+    position: relative;
+    top: 2px;
+}
+.categoryList div{
+    cursor: pointer;
+}
+.footer{
+    margin-top: 140px;
+}
+.questions{
+    background-color: rgba(70, 167, 110, 0.2);
+    margin-top: 125px;
+    margin-right: 70px;
+    margin-left: 50px; margin-top: 130px;
+    margin-right: 70px;
+    padding-bottom: 50px;
+    border-radius: 7px;
+}

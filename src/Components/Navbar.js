@@ -39,7 +39,7 @@ function Navbar(){
             <div className='d-flex navbarTop'>
             <div className="navbarTopContent mr-auto d-flex justify-content-between">
                 <Link to="/SellerAccount">Become a Seller</Link>
-                <a href='#'>Help and support</a>
+                <Link to='/Help'>Help and support</Link>
             </div>
             <div className="date">
                 {weeks[d.getDay()] +

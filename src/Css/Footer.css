@@ -1,29 +1,29 @@
 .footerContent {
-  width: 1350px;
+  width: 1410px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 30px;
   font-size: 14px;
-  
 }
 .footer ul {
   text-decoration: none;
   list-style: none;
+  width: 180px;
 }
 .footer li {
   margin-top: 5px;
 }
 a {
-  color: black;
+  color: #353935;
+  font-weight: 400;
 }
 .footer {
   margin-top: 150px;
-  background-color: #f1f1f1;
+  background-color: #F28C28;
+  color: #353935;;
 }
 .footer li a {
   text-decoration: none;

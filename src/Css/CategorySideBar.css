@@ -1,0 +1,22 @@
+.CategorySideBar{
+    width: 240px;
+    margin-left: 90px;    
+    margin-top: 100px;
+}
+.categorySideBarTitle{
+    background-color: #353935;
+    color: #F28C28;
+    width:240px ;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+.categorySideBarList{
+    background-color:#F28C28;
+    width: 240px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.categoryItem:last-child{
+    padding-bottom: 20px;
+}

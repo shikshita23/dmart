@@ -4,7 +4,6 @@ import "../../Css/Help.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faList,
-  faMagnifyingGlass,
   faChevronUp,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
@@ -31,229 +30,258 @@ export default function Help() {
         <div className="col-3 sideColumn">
           <div className="sideBar">
             <div className="helpCategory">
-              <FontAwesomeIcon icon={faList} style={{marginRight:'15px'}} /> Categories
+              <FontAwesomeIcon icon={faList} style={{ marginRight: "15px" }} />{" "}
+              Categories
             </div>
 
             <div className="sidebarOptions">
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Promotions</div>
-                {Promotion === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setPromotion(!Promotion)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Promotions</div>
+                  {Promotion === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setPromotion(!Promotion)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setPromotion(!Promotion)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
+                </div>
+                {Promotion === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("Voucher Information")}>
+                      Voucher Information
+                    </div>
+                    <div onClick={() => setMainCol("Campaigns")}>Campaigns</div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setPromotion(!Promotion)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Promotion === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("Voucher Information")}>Voucher Information</div>
-                  <div onClick={()=>setMainCol("Campaigns")}>Campaigns</div>
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Account Management</div>
+                  {Account === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setAccount(!Account)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setAccount(!Account)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
                 </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Account Management</div>
-                {Account === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setAccount(!Account)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                {Account === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("Privacy & Security")}>
+                      Privacy & Security
+                    </div>
+                    <div onClick={() => setMainCol("My Account")}>
+                      My Account
+                    </div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setAccount(!Account)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Account === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("Privacy & Security")}>Privacy & Security</div>
-                  <div onClick={()=>setMainCol("My Account")}>My Account</div>
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Payments</div>
+                  {Payments === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setPayments(!Payments)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setPayments(!Payments)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
                 </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Payments</div>
-                {Payments === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setPayments(!Payments)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                {Payments === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("Payment Method")}>
+                      Payment Method
+                    </div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setPayments(!Payments)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Payments === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("Payment Method")}>Payment Method</div>
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Shipping And Delivery</div>
+                  {Shipping === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setShipping(!Shipping)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setShipping(!Shipping)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
                 </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Shipping And Delivery</div>
-                {Shipping === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setShipping(!Shipping)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                {Shipping === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("D-Mart Express")}>
+                      D-Mart Express
+                    </div>
+                    <div onClick={() => setMainCol("D-MArt Pick Up Points")}>
+                      D-Mart Pick Up Points
+                    </div>
+                    <div onClick={() => setMainCol("Shipping Journey")}>
+                      Shipping Journey
+                    </div>
+                    <div onClick={() => setMainCol("D-Mart Verified")}>
+                      D-Mart Verified
+                    </div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setShipping(!Shipping)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Shipping === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("D-Mart Express")}>D-Mart Express</div>
-                  <div onClick={()=>setMainCol("D-MArt Pick Up Points")}>D-Mart Pick Up Points</div>
-                  <div onClick={()=>setMainCol("Shipping Journey")}>Shipping Journey</div>
-                  <div onClick={()=>setMainCol("D-Mart Verified")}>D-Mart Verified</div>
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Return and refund</div>
+                  {Refund === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setRefund(!Refund)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setRefund(!Refund)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
                 </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Return and refund</div>
-                {Refund === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setRefund(!Refund)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                {Refund === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("Warranty Policy")}>
+                      Warranty Policy
+                    </div>
+                    <div onClick={() => setMainCol("Refund Policy")}>
+                      Refund Policy
+                    </div>
+                    <div onClick={() => setMainCol("Return Process")}>
+                      Return Process
+                    </div>
+                    <div onClick={() => setMainCol("Refund Process")}>
+                      Refund Process
+                    </div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setRefund(!Refund)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Refund === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("Warranty Policy")}>Warranty Policy</div>
-                  <div onClick={()=>setMainCol("Refund Policy")}>Refund Policy</div>
-                  <div onClick={()=>setMainCol("Return Process")}>Return Process</div>
-                  <div onClick={()=>setMainCol("Refund Process")}>Refund Process</div>
+              <div className="sideBarDropDown">
+                <div className=" d-flex">
+                  <div className="sidebarTopic">Sell on D-MArt</div>
+                  {Seller === false ? (
+                    <FontAwesomeIcon
+                      onClick={() => setSeller(!Seller)}
+                      icon={faChevronDown}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      onClick={() => setSeller(!Seller)}
+                      icon={faChevronUp}
+                      style={{
+                        marginLeft: "auto",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                        cursor: "pointer",
+                      }}
+                    />
+                  )}
                 </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
-            <div className="sideBarDropDown">
-              <div className=" d-flex">
-                <div className="sidebarTopic">Sell on D-MArt</div>
-                {Seller === false ? (
-                  <FontAwesomeIcon
-                    onClick={() => setSeller(!Seller)}
-                    icon={faChevronDown}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                {Seller === true ? (
+                  <div className="sidebarOption">
+                    <div onClick={() => setMainCol("Become Seller")}>
+                      Become Seller
+                    </div>
+                    <div onClick={() => setMainCol("Seller Support")}>
+                      Seller Support
+                    </div>
+                  </div>
                 ) : (
-                  <FontAwesomeIcon
-                    onClick={() => setSeller(!Seller)}
-                    icon={faChevronUp}
-                    style={{
-                      marginLeft: "auto",
-                      marginTop: "auto",
-                      marginBottom: "auto",
-                      cursor: "pointer",
-                    }}
-                  />
+                  <div></div>
                 )}
               </div>
-              {Seller === true ? (
-                <div className="sidebarOption">
-                  <div onClick={()=>setMainCol("Become Seller")}>Become Seller</div>
-                  <div onClick={()=>setMainCol("Seller Support")}>Seller Support</div>
-                </div>
-              ) : (
-                <div></div>
-              )}
-            </div>
             </div>
           </div>
         </div>
@@ -364,7 +392,9 @@ export default function Help() {
                         marginRight: "10px",
                       }}
                     />
-                    <h6 style={{marginTop:'auto', marginBottom:'auto'}}>Shipping And Delivery</h6>
+                    <h6 style={{ marginTop: "auto", marginBottom: "auto" }}>
+                      Shipping And Delivery
+                    </h6>
                   </div>
                   <div className="categoryList">
                     <div onClick={() => setMainCol("D-Mart Express")}>

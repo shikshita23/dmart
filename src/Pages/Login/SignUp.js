@@ -13,7 +13,6 @@ function SignUp() {
     setData(name, phoneNumber, address, email, password);
     console.log(name, phoneNumber, address, email, password);
   };
-
   const handleChange = (event) => {
     saveData();
     event.preventDefault();

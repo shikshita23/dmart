@@ -8,7 +8,7 @@ select{
     font-size: 13px;
     height: 40px;
     border: none;
-    background-color: #e6d6b4;
+    background-color: #F28C28;
 }
 option {
     overflow: hidden;
@@ -19,7 +19,8 @@ option {
 }
 .helpCategory{
     font-size: 18px;
-    background-color: rgba(167, 110, 70) ;
+    background-color: #353935;
+    color: #F28C28;
     width:240px ;
     padding-top: 15px;
     padding-bottom: 25px;
@@ -27,7 +28,7 @@ option {
     padding-right: 40px;
 }
 .sideBar{
-    background-color:#e6d6b4;
+    background-color:#F28C28;
     width: 240px;
     font-size: 15px;
     margin-bottom: 40px;
@@ -55,7 +56,7 @@ option {
 }
 .categoryColumn
 {
-    background-color:#46A76E;
+    background-color:#F28C28;
     border-radius: 7px;
     height: 135px;
     margin-bottom: 30px;
@@ -75,9 +76,9 @@ option {
     padding-right: 90px;
     padding-left:90px;
     margin-top: 125px;
-    margin-right: 70px;
+    margin-right: 60px;
     margin-left: 50px;
-    background-color: rgba(70, 167, 110, 0.2);
+    background-color: #F9CDA0;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -102,11 +103,10 @@ option {
     margin-top: 140px;
 }
 .questions{
-    background-color: rgba(70, 167, 110, 0.2);
-    margin-top: 125px;
-    margin-right: 70px;
-    margin-left: 50px; margin-top: 130px;
-    margin-right: 70px;
+    background-color: #F9CDA0;
+    margin-left: 50px;
+    margin-top: 130px;
+    margin-right: 60px;
     padding-bottom: 50px;
     border-radius: 7px;
 }
@@ -115,12 +115,12 @@ option {
     flex-direction: column;
     padding: 5px;
     margin-left: 15px;
-    background-color: hsl(30, 40%, 70%);
+    background-color: #F6B370;
     padding-left: 10px;
     cursor: pointer;
 }
 .sidebarOption div:hover{
-    background-color: hsl(20, 0%, 35%);
+    background-color: #353935;
     color: white;
 }
 .sidebarOption div:first-child{
@@ -133,4 +133,3 @@ option {
 .sideBarDropDown{
     margin-bottom: 25px;
 }
-

@@ -5,8 +5,7 @@
     border-radius: 5px;
     width: 130px;
     height: 30px;
-    background-color: #a76e46;
-    color: white;
+    color: #353935;
 }
 .shopDetails{
     position: relative;
@@ -14,8 +13,8 @@
     bottom: 10px;
     width: 130px;
     height: 30px;
-    background-color: #a76e46;
-    color:white;
+    background-color: #F28C28;
+    color:#353935;
     border-radius: 5px;
 }
 .selelrAccountForm{
@@ -53,13 +52,14 @@
     border-radius: 5px;
     width: 130px;
     height: 30px;
-    background-color: #a76e46;
-    color: white;
+    background-color: #F28C28;
+    color: #353935;
 }
 .checkbox{
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     cursor: pointer;
+    margin-left: 9px;
 }
 .DoneButton{
     display: flex;
@@ -71,8 +71,8 @@
     height: 30px;
     padding: auto;
     padding-left: 13px;
-    background-color: #a76e46;
-    color: white;
+    background-color: #F28C28;
+    color: #353935;
 }
 .title{
     font-size: 40px;
@@ -80,7 +80,7 @@
     margin-right: 200px;
     padding-top:  30px;
     padding-bottom: 50px;
-    color:#e6d6b4;
+    color:#353935;
 
 }
 .sellerAccount
@@ -93,13 +93,13 @@
     margin-right: 80px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #e6d6b4;
-    color: #6B4947;
+    background-color:#353935;
+    color: #F28C28;
 }
 .sellerAccountContainer{
     height: 520px;
     margin-top: 140px;
-    background-color: 	#6B4947;
+    background-color: 	#F28C28;
 }
 .agreeLabel{
     margin-top: 10px;

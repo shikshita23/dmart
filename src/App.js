@@ -5,6 +5,7 @@ import Layout from "./Components/Layout";
 import Help from "./Pages/Help/Help";
 import{Routes,Route} from 'react-router-dom'
 import SellerAccount from "./Pages/Login/SellerAccount";
+import CategoryList from "./Pages/CatagoryList/CategoryList";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
         <Route path="/SellerAccount" element={<SellerAccount></SellerAccount>}></Route>
         <Route path="/Help" element={<Help></Help>}></Route>
+        <Route path="/CategoryList" element={<CategoryList></CategoryList>}></Route>
       </Routes>
       
     </>

@@ -47,9 +47,9 @@ const forYouImages = [
 ];
 function ForYou() {
   return (
-    <>
+    <div className="forYou" style={{paddingBottom:'15px', paddingTop:'30px', backgroundColor:'white', marginBottom:'70px', width:'1350px', marginLeft:'auto',marginRight:'auto'}}>
       <ProductsSlider products={forYouImages} title="For You"></ProductsSlider>
-    </>
+    </div>
   );
 }
 export default ForYou;

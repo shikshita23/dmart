@@ -6,13 +6,100 @@ export default function SellerAccount() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [nameOfShop, setNameOfShop] = useState("");
   const [addressOfShop, setAddressOfShop] = useState("");
   const [panNumber, setPanNumber] = useState("");
-
   const [detailPage, setDetailPage] = useState("personal");
+  const [personalClicked, setPersonalClicked] = useState(true);
+  const [shopClicked, setShopClicked] = useState(false);
+  const [submitClicked, setSubmitClicked] = useState(false);
 
+  const personalBar = () => {
+    setDetailPage("personal");
+    setPersonalClicked(true);
+    setShopClicked(false);
+    setSubmitClicked(false);
+  };
+  const shopBar = () => {
+    setDetailPage("shop");
+    setShopClicked(true);
+    setPersonalClicked(false);
+    setSubmitClicked(false);
+  };
+  const submitBar = () => {
+    setDetailPage("submit");
+    setSubmitClicked(true);
+    setPersonalClicked(false);
+    setShopClicked(false);
+  };
+  
+  const getScalePersonal=()=>{
+    switch(personalClicked){
+      case true:
+        return "scale(1.3)"; 
+      default:
+          return"scale(1)";
+    }
+
+  }
+  const getScaleShop=()=>{
+    switch(shopClicked){
+      case true:
+        return "scale(1.3)";
+      default:
+          return"scale(1)";
+    }
+
+  }
+  const getScaleSubmit=()=>{
+    switch(submitClicked){
+      case true:
+        return "scale(1.3)";
+      default:
+          return"scale(1)";
+    }
+
+  }
+  const getBackgroundColorPersonal=()=>{
+    switch(personalClicked){
+      case true:
+        return "#dff2ff"; 
+      default:
+          return"#F28C28";
+    }
+
+  }
+  const getBackgroundColorShop=()=>{
+    switch(shopClicked){
+      case true:
+        return "#dff2ff";
+      default:
+          return"#F28C28";
+    }
+
+  }
+  const getBackgroundColorSubmit=()=>{
+    switch(submitClicked){
+      case true:
+        return "#dff2ff";
+      default:
+          return"#F28C28";
+    }
+
+  }
+
+  const dynamicBackgroundPersonal={
+    backgroundColor:getBackgroundColorPersonal(),
+    transform:getScalePersonal(),
+  };
+  const dynamicBackgroundShop={
+    backgroundColor:getBackgroundColorShop(),
+    transform:getScaleShop(),
+  };
+  const dynamicBackgroundsubmit={
+    backgroundColor:getBackgroundColorSubmit(),
+    transform:getScaleSubmit(),
+  };
   return (
     <div className="sellerAccountContainer">
       <div className="title">Create an Account</div>
@@ -20,16 +107,18 @@ export default function SellerAccount() {
         <div className="line"></div>
         <button
           className="personalDetails"
-          onClick={() => setDetailPage("personal")}
+          onClick={personalBar}
+          style={dynamicBackgroundPersonal}
         >
           Person Details
         </button>
-        <button className="shopDetails" onClick={() => setDetailPage("shop")}>
+        <button className="shopDetails" onClick={shopBar} style={dynamicBackgroundShop}>
           Shop Details
         </button>
         <button
           className="submitButtonTop"
-          onClick={() => setDetailPage("submit")}
+          onClick={submitBar}
+          style={dynamicBackgroundsubmit}
         >
           Submit
         </button>
@@ -125,7 +214,14 @@ export default function SellerAccount() {
         {detailPage === "submit" ? (
           <div className="submitDiv">
             <p>
-              Eget nulla facilisi etiam dignissim diam. Aliquam ultrices sagittis orci a scelerisque purus. Tellus mauris a diam maecenas sed enim ut sem. Est ultricies integer quis auctor. Ac turpisegestas sed tempus. . Aenean et tortor at risus. Sit amet commodo nulla facilisi.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
+              Eget nulla facilisi etiam dignissim diam. Aliquam ultrices
+              sagittis orci a scelerisque purus. Tellus mauris a diam maecenas
+              sed enim ut sem. Est ultricies integer quis auctor. Ac
+              turpisegestas sed tempus. . Aenean et tortor at risus. Sit amet
+              commodo nulla facilisi.In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate the
+              visual form of a document or a typeface without relying on
+              meaningful content.
             </p>
             <label className="agreeLabel">
               I agree

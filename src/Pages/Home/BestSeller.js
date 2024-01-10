@@ -1,4 +1,4 @@
-import "../../Css/BestSeller.css"
+import "../../Css/BestSeller.css";
 import pic1 from "../../assets/carousel1.png";
 import pic2 from "../../assets/carousel2.png";
 import pic3 from "../../assets/carousel3.png";
@@ -47,12 +47,12 @@ const bestSellerImages = [
 ];
 function BestSellerCollection() {
   return (
-    <>
+    <div className="bestSeller" style={{paddingBottom:'15px', paddingTop:'30px', backgroundColor:'white', marginBottom:'70px',width:'1350px',marginLeft:'auto',marginRight:'auto'}}>
       <ProductsSlider
         products={bestSellerImages}
         title="best Seller"
       ></ProductsSlider>
-    </>
+    </div>
   );
 }
 export default BestSellerCollection;

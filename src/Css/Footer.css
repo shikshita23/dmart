@@ -1,5 +1,5 @@
 .footerContent {
-  width: 1410px;
+  width: 1345px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -27,4 +27,7 @@ a {
 }
 .footer li a {
   text-decoration: none;
+}
+.lastUl{
+  width: 100px!important;
 }

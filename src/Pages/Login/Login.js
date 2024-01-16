@@ -9,10 +9,10 @@ export default function Login() {
       </div>
       <div className="loginContainer">
         <div className="inputs">
-          <div className="input">
+          <div className="input py-auto">
             <input type="email" placeholder="Email id" />
           </div>
-          <div className="input">
+          <div className="input py-auto">
             <input type="password" placeholder="Password" />
           </div>
         </div>

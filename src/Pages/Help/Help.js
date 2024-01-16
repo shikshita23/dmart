@@ -36,28 +36,24 @@ export default function Help() {
 
             <div className="sidebarOptions">
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setPromotion(!Promotion)} style={{cursor:'pointer'}}>
                   <div className="sidebarTopic">Promotions</div>
                   {Promotion === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setPromotion(!Promotion)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setPromotion(!Promotion)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -74,28 +70,24 @@ export default function Help() {
                 )}
               </div>
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setAccount(!Account)} style={{cursor:'pointer'}}>
                   <div className="sidebarTopic">Account Management</div>
                   {Account === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setAccount(!Account)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setAccount(!Account)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -114,28 +106,24 @@ export default function Help() {
                 )}
               </div>
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setPayments(!Payments)} style={{cursor:'pointer'}}>
                   <div className="sidebarTopic">Payments</div>
                   {Payments === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setPayments(!Payments)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setPayments(!Payments)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -151,28 +139,24 @@ export default function Help() {
                 )}
               </div>
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setShipping(!Shipping)} style={{cursor:'pointer'}}>
                   <div className="sidebarTopic">Shipping And Delivery</div>
                   {Shipping === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setShipping(!Shipping)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setShipping(!Shipping)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -197,28 +181,24 @@ export default function Help() {
                 )}
               </div>
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setRefund(!Refund)} style={{cursor:'pointer'}}>
                   <div className="sidebarTopic">Return and refund</div>
                   {Refund === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setRefund(!Refund)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setRefund(!Refund)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -243,28 +223,24 @@ export default function Help() {
                 )}
               </div>
               <div className="sideBarDropDown">
-                <div className=" d-flex">
+                <div className=" d-flex" onClick={() => setSeller(!Seller)} style={{cursor: "pointer"}}>
                   <div className="sidebarTopic">Sell on D-MArt</div>
                   {Seller === false ? (
                     <FontAwesomeIcon
-                      onClick={() => setSeller(!Seller)}
                       icon={faChevronDown}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   ) : (
                     <FontAwesomeIcon
-                      onClick={() => setSeller(!Seller)}
                       icon={faChevronUp}
                       style={{
                         marginLeft: "auto",
                         marginTop: "auto",
                         marginBottom: "auto",
-                        cursor: "pointer",
                       }}
                     />
                   )}
@@ -287,22 +263,9 @@ export default function Help() {
         </div>
 
         <div className="col-9 mainColumn">
-          {/* <input
-            type="text"
-            className="searchQn"
-            placeholder="Search Question"
-          />
-          <div className="SearchIconDiv">
-            <FontAwesomeIcon
-              icon={faMagnifyingGlass}
-              className="searchQnIcon"
-              style={{ color: "#e6d6b4" }}
-            />
-          </div> */}
 
           {mainCol === "category" ? (
             <div className="helpBox">
-              <div className="helpTitle">Categories</div>
 
               <div className="row categoryRow">
                 <div className="col categoryColumn">

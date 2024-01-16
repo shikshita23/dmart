@@ -2,14 +2,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-select{
-    border-radius: 0px;
-    width: 240px;
-    font-size: 13px;
-    height: 40px;
-    border: none;
-    background-color: #F28C28;
-}
 option {
     overflow: hidden;
     white-space: nowrap;
@@ -32,7 +24,7 @@ option {
     width: 240px;
     font-size: 15px;
     margin-bottom: 40px;
-    margin-left: 80px;
+    margin-left: 85px;
     margin-top: 80px;
 }
 .searchQn{
@@ -73,15 +65,12 @@ option {
     gap: 40px;
 }
 .helpBox{
-    padding-right: 90px;
     padding-left:90px;
-    margin-top: 125px;
-    margin-right: 60px;
-    margin-left: 50px;
-    background-color: #F9CDA0;
+    margin-top: 80px;
+    margin-right: 70px;
     border-radius: 5px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .helpTitle{
     height: 40px;
@@ -132,4 +121,7 @@ option {
 }
 .sideBarDropDown{
     margin-bottom: 25px;
+}
+body{ 
+    background-color: #ededed;
 }

@@ -1,17 +1,14 @@
 import "../../Css/Card.css";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 function Card({imgsrc,title,imgAlt}) {
-  const[categoryN,setCategoryN]=useState("");
- 
   return (
     <div className="Cards">
       <div className="cardTitle">{title}</div>
-      <Link to="/CategoryList">
+      <Link to={`/ProductList/${title}`}>
       <div  style={{cursor:'pointer'}}>
       <div className="cardImage">
-        <img src={imgsrc} alt={imgAlt}></img>
+        <img className="CardImg" src={imgsrc} alt={imgAlt}></img>
       </div>
       <div className="shop">
         <div className="mr-2 mt-2 font-weight-bold" >Shop Now</div>

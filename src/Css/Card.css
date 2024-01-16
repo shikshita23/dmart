@@ -4,7 +4,7 @@
     background-color: white;
     border-radius: 7px;
 }
-img{
+.CardImg{
     width: 270px;
     height: 200px;
     display: flex;

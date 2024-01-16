@@ -12,28 +12,24 @@ export default function MyAccordion({ qn, ans, category }) {
     <>
       {category === CatgoryName ? (
         <div className="mainHeading">
-          <div className=" d-flex">
-            <div className="FQ">{qn}</div>
+          <div className=" d-flex" onClick={() => setShow(!show)} style={{cursor:'pointer'}}>
+            <div className="FQ"  >{qn}</div>
             {show === false ? (
               <FontAwesomeIcon
-                onClick={() => setShow(!show)}
                 icon={faChevronDown}
                 style={{
                   marginLeft: "auto",
                   marginTop: "auto",
                   marginBottom: "auto",
-                  cursor: "pointer",
                 }}
               />
             ) : (
               <FontAwesomeIcon
-                onClick={() => setShow(!show)}
                 icon={faChevronUp}
                 style={{
                   marginLeft: "auto",
                   marginTop: "auto",
                   marginBottom: "auto",
-                  cursor: "pointer",
                 }}
               />
             )}

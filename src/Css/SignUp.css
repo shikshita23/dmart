@@ -21,9 +21,12 @@
     margin-right: 100px;
 }
 label{
-    margin-top: 10px;
+    margin-top: 13px;
     font-size: 15px;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .submitButton{
     width: 120px;
@@ -51,10 +54,12 @@ input{
     background-color:#f0f0f0;
     border:none;
     border-radius: 7px;
-    height: 32px;
+    height: 37px;
     width: 270px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-select {
+.signupSelect {
     width: 270px!important;
     height: 39px!important;
     border-radius: 7px!important;
@@ -73,10 +78,10 @@ select {
 .loginLink{
     color: #F28C28;
     margin:auto;
-    margin-top: 7px;
+    margin-top: 18px;
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .login{
     color: whitesmoke;

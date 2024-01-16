@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footerContent">
-        <ul>
+        <ul className="ps-0">
           <li className="font-weight-bold">About Us</li>
           <li className="mt-3">
             <a href="#">About D-mart</a>
@@ -40,7 +40,7 @@ function Footer() {
             <a href="#">Contact Us</a>
           </li>
         </ul>
-        <ul>
+        <ul className="pe-0 ps-0 lastUl">
           <li className="font-weight-bold">Stay Connected</li>
           <li className="mt-3">
             <a href="#">Dmart Blogs</a>

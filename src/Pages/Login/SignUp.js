@@ -25,6 +25,7 @@ function SignUp() {
         <label>
           Name:
           <input
+            className="py-auto"
             type="text"
             name="name"
             value={name}
@@ -34,6 +35,7 @@ function SignUp() {
         <label>
           PhoneNumber:
           <input
+            className="py-auto"
             type="text"
             name="phoneNumber"
             value={phoneNumber}
@@ -42,7 +44,7 @@ function SignUp() {
         </label>
         <label>
           Address:
-          <select value={address} onChange={(e) => setAddress(e.target.value)}>
+          <select className="signupSelect" value={address} onChange={(e) => setAddress(e.target.value)}>
             <option>Kathmandu</option>
             <option>Bhaktapur</option>
             <option>Lalitpur</option>
@@ -51,6 +53,7 @@ function SignUp() {
         <label>
           Email:
           <input
+            className="py-auto"
             type="email"
             name="email"
             value={email}
@@ -60,6 +63,7 @@ function SignUp() {
         <label>
           Password:
           <input
+            className="py-auto"
             type="password"
             name="password"
             value={password}

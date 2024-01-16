@@ -1,37 +1,34 @@
+.navbarHero{
+  background-color: #F28C28;
+  
+}
 .navbar {
-  background-color:#F28C28;
   height: 63px;
-  padding-left: 90px;
-  padding-right: 75px;
   font-size: 14px;
+  width: 1345px;
+  justify-content: space-between;
+  margin: auto;
 }
-.navbar a {
-  color: #353935;
-  font-weight: 700;
-}
+
 .logo {
   width: 120px;
   height: 45px;
 }
 .navHeroContent {
-  width: 210px;
+  width: 175px;
   color:#353935;
 }
 .navbarTop {
+  width: 1345px;
+  justify-content: space-between;
+  margin: auto;
   font-size: 14px;
-  background-color:#F28C28;
-  padding-right: 95px;
-  padding-left: 94px;
   padding-top: 8px;
   font-weight: 500;
   color: #353935;
 }
 .navbarTopContent {
-  width: 400px;
-}
-.navbarTopContent a {
-  color: #353935;
-  font-weight: 500;
+  width: 420px;
 }
 .searchIcon {
   position: relative;
@@ -39,7 +36,7 @@
   top: 33%;
 }
 .searchForItem {
-  padding-left: 20px;
+  padding-left: 15px;
   margin-top: 7px;
   width: 600px;
   border-radius: 32px;
@@ -51,9 +48,6 @@
   height: 25px;
   margin-right: 20px;
   margin-left: 20px;
-}
-.cartIcon {
-  margin-right: 20px;
 }
 .searchBar {
   margin-right: 65px;

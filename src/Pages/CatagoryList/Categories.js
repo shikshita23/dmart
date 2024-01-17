@@ -7,6 +7,7 @@ function Categories() {
   const [category,setCategory]=useState(categoryDetails)
   return (
     <div className="category row row-cols-4 ">
+      {console.log("categoryUseState==>",category)}
       {category.map((items,i)=>{
         return <Card key={i} {...items}></Card>
       })}

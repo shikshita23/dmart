@@ -1,0 +1,32 @@
+.cashOnDelivery,  .esewa{
+    width: 110px;
+    height:110px ;
+    background-color: #f8f8f8;
+    border-radius: 7px;
+    font-size: 12px;
+}
+.orderConfirmationBox{
+    margin-left: 89px;
+    margin-top: 50px;
+}
+.orderConfirmationTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.OrderSummary, .paymentSummary{
+    width: 400px;
+    background-color: #f8f8f8;
+    margin-right: 90px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+}
+.OrderSummary{
+    margin-top: 55px;
+}
+.cashOnDelivery:hover, .esewa:hover{
+    scale: 1.1;
+    cursor: pointer;
+}

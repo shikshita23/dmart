@@ -1,0 +1,44 @@
+.deliveryDetails{
+    width: 830px;
+    background-color: #f8f8f8;
+    height: fit-content;
+    box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+-webkit-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+-moz-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+}
+.OrderItemsDetails{
+    padding-top: 20px;
+    padding-bottom:20px ;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+-webkit-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+-moz-box-shadow: 10px 10px 5px -3px rgba(216,216,216,0.75);
+}
+.PaymentBox{
+    margin-top: 50px;
+}
+.OrderedItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.PaymentBox{
+    margin-left: 89px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.checkoutDiv{
+    margin-left: 89px;
+    margin-right: auto;
+
+}
+.OrderedItemImage img{
+    width: 90px;
+}
+.horizontalDivider{
+    border: 1px solid #ededed;
+    height: 3px;
+    background-color: #ededed;
+    margin-bottom: 10px;
+}

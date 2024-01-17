@@ -8,6 +8,8 @@ import SellerAccount from "./Pages/Login/SellerAccount";
 import CategoryList from "./Pages/ProductList/CategoryList";
 import CartDetails from "./Pages/Cart/CartDetails";
 import CheckOut from "./Pages/Checkout/Checkout";
+import MyCartDetails from "./Pages/Cart/MyCartDetails";
+import OrderConfirmation from "./Pages/OrderConfirmation/OrderConfirmation";
 function App() {
   return (
     <>
@@ -18,8 +20,9 @@ function App() {
         <Route path="/SellerAccount" element={<SellerAccount></SellerAccount>}></Route>
         <Route path="/Help" element={<Help></Help>}></Route>
         <Route path="/ProductList/:title" element={<CategoryList></CategoryList>}></Route>
-        <Route path="/CartDetails" element={<CartDetails></CartDetails>}> </Route>
+        <Route path="/CartDetails" element={<MyCartDetails></MyCartDetails>}> </Route>
         <Route path="/Checkout" element={<CheckOut></CheckOut>}></Route>
+        <Route path="/OrderConfirmation" element={<OrderConfirmation></OrderConfirmation>}></Route>
       </Routes>
     </>
   );

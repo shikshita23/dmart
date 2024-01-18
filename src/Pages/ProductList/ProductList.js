@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import { productDetails } from "./ProductApi";
+import { Link } from "react-router-dom";
 // const options = {
 //   method: "GET",
 //   url: "https://real-time-product-search.p.rapidapi.com/search",
@@ -65,9 +66,11 @@ const[product,setProduct]=useState(productDetails)
           // backgroundColor:'#f8f8f8'
         }} >
             {product.map((item, index) => (
+              <Link to={`/ProductDetail/${item.title}`}>
               <ProductCard
                 key={index} {...item}
               />
+              </Link>
             ))}
       </div>
     </>

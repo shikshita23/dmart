@@ -22,6 +22,7 @@ function ImageSlider({ imageUrls }) {
       <img
         className="sliderImage"
         src={imageUrls[imageIndex]}
+        style={{height:'500px'}}
         alt="pictures of recent and upcoming slides"
       />
       <button onClick={prevSlide} className="slideButtonLeft">

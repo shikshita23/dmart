@@ -102,5 +102,6 @@
     background-color: 	#F28C28;
 }
 .agreeLabel{
-    margin-top: 10px;
+    margin-top: 10px!important;
+    margin-left: 0px!important;
 }

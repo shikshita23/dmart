@@ -51,7 +51,9 @@
 .cartTitle{
     font-size: 20px;
     font-weight: 600;
-    margin-left: 95px;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 1.4rem;
 }
 .ContentTitle{
     font-weight: 500;

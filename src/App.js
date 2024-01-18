@@ -6,10 +6,10 @@ import Help from "./Pages/Help/Help";
 import{Routes,Route} from 'react-router-dom'
 import SellerAccount from "./Pages/Login/SellerAccount";
 import CategoryList from "./Pages/ProductList/CategoryList";
-import CartDetails from "./Pages/Cart/CartDetails";
 import CheckOut from "./Pages/Checkout/Checkout";
 import MyCartDetails from "./Pages/Cart/MyCartDetails";
 import OrderConfirmation from "./Pages/OrderConfirmation/OrderConfirmation";
+import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
         <Route path="/CartDetails" element={<MyCartDetails></MyCartDetails>}> </Route>
         <Route path="/Checkout" element={<CheckOut></CheckOut>}></Route>
         <Route path="/OrderConfirmation" element={<OrderConfirmation></OrderConfirmation>}></Route>
+        <Route path="/ProductDetail/:title" element={<ProductDetail></ProductDetail>}></Route>
       </Routes>
     </>
   );

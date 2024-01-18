@@ -14,9 +14,21 @@
 .categorySideBarList{
     background-color:#F28C28;
     width: 240px;
-    font-size: 15px;
+    font-size: 15px; 
+}
+.categoryItem{
     padding-left: 20px;
+}
+a{
+    all: unset!important;;
+}
+a:hover{
+    all: unset;
 }
 .categoryItem:last-child{
     padding-bottom: 20px;
+}
+.categoryItem:hover{
+    background-color: #353935;
+    color: #F28C28;
 }

@@ -18,11 +18,10 @@
     margin-right: auto;
 }
 .productBox{
-    width: 1020px;
+    width: 1055px;
     float: right;
     padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 50px;
+    margin-left: auto;
     padding-top: 15px;
 }
 .productTitleName{

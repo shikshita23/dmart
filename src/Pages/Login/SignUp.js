@@ -25,7 +25,7 @@ function SignUp() {
         <label>
           Name:
           <input
-            className="py-auto"
+            className="py-auto SignUpinput"
             type="text"
             name="name"
             value={name}
@@ -35,7 +35,7 @@ function SignUp() {
         <label>
           PhoneNumber:
           <input
-            className="py-auto"
+            className="py-auto SignUpinput"
             type="text"
             name="phoneNumber"
             value={phoneNumber}
@@ -53,7 +53,7 @@ function SignUp() {
         <label>
           Email:
           <input
-            className="py-auto"
+            className="py-auto SignUpinput"
             type="email"
             name="email"
             value={email}
@@ -63,7 +63,7 @@ function SignUp() {
         <label>
           Password:
           <input
-            className="py-auto"
+            className="py-auto SignUpinput"
             type="password"
             name="password"
             value={password}
@@ -77,7 +77,7 @@ function SignUp() {
             Login
           </Link>
         </div>
-        <input className="submitButton" type="submit"></input>
+        <input className="submitButton SignUpinput" type="submit"></input>
       </form>
     </div>
   );

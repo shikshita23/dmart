@@ -1,77 +1,86 @@
-import pic1 from "../../assets/carousel1.png";
-import pic2 from "../../assets/carousel2.png";
-import pic3 from "../../assets/carousel3.png";
+import womenFashion from "../../assets/womenfashion.png";
+import menFashion from "../../assets/mensFashion.png";
+import electronic from "../../assets/electronics.png";
+import grocery from "../../assets/grocery.png";
+import sports from "../../assets/sports.png";
+import baby from "../../assets/baby.png";
+import beauty from "../../assets/beauty.png";
+import health from "../../assets/health.png";
+import home from "../../assets/home.png";
+import toy from "../../assets/toy.png";
+import pet from "../../assets/pet.png";
+import school from "../../assets/school.png"
 export const categoryDetails=[
     {
         id:1,
-        imgsrc:pic1,
-        imgAlt:"this is pic1",
-        title:"CATEGORY 1",
+        imgsrc:womenFashion,
+        imgAlt:"this is icon for women Fashion",
+        title:"Women's Fashion ",
     },
     {
         id:2,
-        imgsrc:pic2,
-        imgAlt:"this is pic2",
-        title:"CATEGORY 2",
+        imgsrc:menFashion,
+        imgAlt:"this is icon for men Fashion",
+        title:"Men's Fashions ",
     },
     {
         id:3,
-        imgsrc:pic3,
-        imgAlt:"this is pic3",
-        title:"CATEGORY 3",
+        imgsrc:electronic,
+        imgAlt:"icon of Electronic and Gadgets",
+        title:"Electronic Gadgets",
     },
     {
         id:4,
-        imgsrc:pic1,
-        imgAlt:"this is pic4",
-        title:"CATEGORY 4",
+        imgsrc:grocery,
+        imgAlt:"icon of Groceries",
+        title:"Groceries",
     },
     {
         id:5,
-        imgsrc:pic3,
-        imgAlt:"this is pic5",
-        title:"CATEGORY 5",
+        imgsrc:sports,
+        imgAlt:"icon of Sports and Outdoors",
+        title:"Sports And Outdoors",
     },
     {
         id:6,
-        imgsrc:pic2,
-        imgAlt:"this is pic6",
-        title:"CATEGORY 6",
+        imgsrc:home,
+        imgAlt:"icon of home and decoration",
+        title:"Home And Decoration",
     },
     {
         id:7,
-        imgsrc:pic1,
-        imgAlt:"this is pic7",
-        title:"CATEGORY 7",
+        imgsrc:health,
+        imgAlt:"icon of health",
+        title:"Health",
     },
     {
         id:8,
-        imgsrc:pic2,
-        imgAlt:"this is pic8",
-        title:"CATEGORY 8",
+        imgsrc:beauty,
+        imgAlt:"icon of Beauty",
+        title:"Beauty",
     },
     {
         id:9,
-        imgsrc:pic3,
-        imgAlt:"this is pic9",
-        title:"CATEGORY 9",
+        imgsrc:school,
+        imgAlt:"icon of School and office Supplies",
+        title:"School And Office Supplies",
     },
     {
         id:10,
-        imgsrc:pic1,
-        imgAlt:"this is pic10",
-        title:"CATEGORY 10",
+        imgsrc:pet,
+        imgAlt:"icon Of pet Supplies",
+        title:"Pet Supplies",
     },
     {
         id:11,
-        imgsrc:pic3,
-        imgAlt:"this is pic11",
-        title:"CATEGORY 11",
+        imgsrc:toy,
+        imgAlt:"icon of video games and toys",
+        title:"Video Games And Toys",
     },
     {
         id:12,
-        imgsrc:pic1,
-        imgAlt:"this is pic12",
-        title:"CATEGORY 12",
+        imgsrc:baby,
+        imgAlt:"icon of babies Supplies",
+        title:"Baby Supplies",
     },
 ];

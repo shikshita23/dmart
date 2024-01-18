@@ -1,0 +1,34 @@
+.productdetailBox , .descriptionBox , .productReview, .productQuestion{
+    margin-left: 87px;
+    margin-top: 50px;
+    background-color: white;
+    margin-right: 85px;
+    padding: 20px;
+    line-height: 0.8cm;
+    padding-left: 8px;
+}.horizonDivider{
+    background-color: #ededed;
+    height: 1px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.descriptionBox, .productReview, .productQuestion{
+    padding-left: 20px!important;
+}
+.buttons{
+    margin-top: 30px;
+}
+.buttons button:first-child{
+    margin-right: 10px;
+}
+.descriptionList{
+    width: 350px;
+}
+.buttons button{
+    width: 170px;
+    border: none;
+    padding: 7px;
+}
+button:hover{
+    background-color: #f28c28;
+}

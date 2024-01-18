@@ -8,7 +8,9 @@ export const productDetails=[
         imgAlt:"this is pic1",
         title:"PRODUCT 1",
         rating:4.3,
-        price:150
+        price:150,
+        category:'Home and decoration',
+        qty:4,
     },
     {
         id:2,
@@ -16,7 +18,9 @@ export const productDetails=[
         imgAlt:"this is pic2",
         title:"PRODUCT 2",
         rating:4.4,
-        price:250
+        price:250,
+        category:'Sports and outdoors',
+        qty:3,
     },
     {
         id:3,
@@ -24,7 +28,9 @@ export const productDetails=[
         imgAlt:"this is pic3",
         title:"PRODUCT 3",
         rating:4.1,
-        price:300
+        price:300,
+        category:'Home and decoration',
+        qty:2,
     },
     {
         id:4,
@@ -32,7 +38,9 @@ export const productDetails=[
         imgAlt:"this is pic4",
         title:"PRODUCT 4",
         rating:3.4,
-        price:1400
+        price:1400,
+        category:'Home and decoration',
+        qty:1,
     },
     {
         id:5,
@@ -40,7 +48,9 @@ export const productDetails=[
         imgAlt:"this is pic5",
         title:"PRODUCT 5",
         rating:4.0,
-        price:2500
+        price:2500,
+        category:'Sports and outdoors',
+        qty:4,
     },
     {
         id:6,
@@ -48,7 +58,9 @@ export const productDetails=[
         imgAlt:"this is pic6",
         title:"PRODUCT 6",
         rating:3.1,
-        price:100
+        price:100,
+        category:'Baby supplies',
+        qty:3,
     },
     {
         id:7,
@@ -56,7 +68,9 @@ export const productDetails=[
         imgAlt:"this is pic7",
         title:"PRODUCT 7",
         rating:3.3,
-        price:1600
+        price:1600,
+        category:"Women's Fashion",
+        qty:3,
     },
     {
         id:8,
@@ -64,7 +78,9 @@ export const productDetails=[
         imgAlt:"this is pic8",
         title:"PRODUCT 8",
         rating:3.6,
-        price:3000
+        price:3000,
+        category:"Men's Fashion",
+        qty:1,
     },
     {
         id:9,
@@ -72,7 +88,9 @@ export const productDetails=[
         imgAlt:"this is pic9",
         title:"PRODUCT 9",
         rating:3.9,
-        price:4500
+        price:4500,
+        category:'Groceries',
+        qty:2,
     },
     {
         id:10,
@@ -80,7 +98,9 @@ export const productDetails=[
         imgAlt:"this is pic10",
         title:"PRODUCT 10",
         rating:4.9,
-        price:5000
+        price:5000,
+        category:'Health',
+        qty:1,
     },
     {
         id:11,
@@ -88,7 +108,9 @@ export const productDetails=[
         imgAlt:"this is pic11",
         title:"PRODUCT 11",
         rating:4.8,
-        price:9750
+        price:9750,
+        category:'Beauty',
+        qty:2,
     },
     {
         id:12,
@@ -96,6 +118,8 @@ export const productDetails=[
         imgAlt:"this is pic12",
         title:"PRODUCT 12",
         rating:4.5,
-        price:2200
+        price:2200,
+        category:'Beauty',
+        qty:2,
     },
 ];
